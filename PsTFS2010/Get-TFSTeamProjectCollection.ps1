@@ -24,7 +24,7 @@ function Get-TFSTeamProjectCollection {
     process {
         switch ($PSCmdlet.ParameterSetName) {
             Server {
-                if ($ConfigurationServer -is [string]) {
+                if ($ConfigurationServer -is [string] -or $ConfigurationServer -is [Uri]) {
                     $ConfigurationServer = Get-TfsConfigurationServer -Uri $ConfigurationServer
                 }
                 $LocationService = $ConfigurationServer.GetService([Microsoft.TeamFoundation.Framework.Client.ILocationService])
