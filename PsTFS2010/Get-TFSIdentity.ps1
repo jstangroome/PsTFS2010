@@ -30,7 +30,7 @@ function Get-TFSIdentity {
 
     switch ($PSCmdlet.ParameterSetname) {
         Descriptor {
-            $IdentityManagementService.ReadIdentity($Descriptor, $Membership, $Options)
+            $IdentityManagementService.ReadIdentities($Descriptor, $Membership, $Options)
         }
         default {
             $IdentityManagementService.ReadIdentity($SearchFactor, $Name, $Membership, $Options)
