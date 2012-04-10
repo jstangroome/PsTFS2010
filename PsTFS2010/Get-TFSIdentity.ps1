@@ -16,7 +16,7 @@ function Get-TFSIdentity {
         $SearchFactor = 'DisplayName',
 
         [Parameter(ParameterSetName='Descriptor', Mandatory=$true)]
-        [Microsoft.TeamFoundation.Framework.Client.IdentityDescriptor]
+        [Microsoft.TeamFoundation.Framework.Client.IdentityDescriptor[]]
         $Descriptor,
 
         [Microsoft.TeamFoundation.Framework.Common.MembershipQuery]
