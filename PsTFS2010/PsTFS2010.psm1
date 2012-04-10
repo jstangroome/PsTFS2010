@@ -9,3 +9,4 @@ Add-Type -Path $PSScriptRoot\AuthorizationProjectPermissions.cs
 . $PSScriptRoot\Get-TFSTeamProjectPermission.ps1
 . $PSScriptRoot\Set-TFSTeamProjectPermission.ps1
 . $PSScriptRoot\Get-TFSIdentity.ps1
+. $PSScriptRoot\Get-TFSBuildPermission.ps1
